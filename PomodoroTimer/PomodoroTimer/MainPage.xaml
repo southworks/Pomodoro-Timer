@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="PomodoroTimer.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PomodoroTimer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="290.5" Width="431.25">
+
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="auto" Height="146">
+        <TextBlock x:Name="timerLabel" HorizontalAlignment="Center" Text="00:00:00" TextWrapping="Wrap" VerticalAlignment="Top"  FontSize="60" FontWeight="Normal"  TextAlignment="Center" Width="328" Margin="0,0,0,0"/>
+        <Button Name="startButton" Content="Start" HorizontalAlignment="Left" Click="Button_Click_Start"  VerticalAlignment="Top" Margin="44,101,0,0"/>
+        <Button Name="stopButton" Content="Stop" HorizontalAlignment="Left" Click="Button_Click_Stop" VerticalAlignment="Top" Margin="104,101,0,0" RenderTransformOrigin="1.373,0.57"/>
+        <Button Name="resetButton" Content="Reset" HorizontalAlignment="Left" Click="Button_Click_Reset" VerticalAlignment="Top" Margin="164,101,0,0" RenderTransformOrigin="1.373,0.57"/>
+        <Button Name="restButton" Content="Rest" HorizontalAlignment="Left" Click="Button_Click_Rest" VerticalAlignment="Top" Margin="230,101,0,0" RenderTransformOrigin="1.373,0.57"/>
+    </Grid>
+</Page>
